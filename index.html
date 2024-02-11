@@ -33,7 +33,7 @@
             margin: 0;
         }
         .feature-card{
-            border: 2px solid black;
+            /* border: 2px solid black; */
             text-align: center;
             padding: 50px;
             color: var(--theme-color);
@@ -56,6 +56,42 @@
         .section-title{
             font-size: 50px;
             color: var(--theme-color);
+        }
+        .section-video{
+            padding: 45px;
+        }
+        .section-video video{
+            width: 100%;
+        }
+        .section-title{
+            font-family: ADLaM Display;
+            text-align: center;
+        }
+        .section-contact{
+            padding: 50px 300px;
+        }
+        .text-input , .text-input-area{
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+        .form{
+            /* border: 2px solid black; */
+        }
+        .form-btm{
+            padding: 10px 20px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .text-input-area{
+            resize: vertical;
         }
     </style>
 </head>
@@ -92,6 +128,28 @@
                 </p>
             </div>
         </div>
+        </section>
+        <section class="section-video">
+            <h2 class="section-title">Our Video</h2>
+            <video src="WhatsApp Video 2024-02-10 at 11.24.49_7e2d3b38.mp4" autoplay loop controls></video>
+        </section>
+        <section class="section-contact">
+            <h2 class="section-title">Contact Us</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" class="text-input">
+
+                <label>Email Address</label>
+                <input type="text" class="text-input">
+
+                <label>Contact No.</label>
+                <input type="text" class="text-input">
+
+                <label>Message</label>
+                <textarea name="" rows="5" class="text-input-area"></textarea>
+
+                <button class="form-btm">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
