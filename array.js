@@ -29,3 +29,9 @@ console.log(movies);
 movies.pop();// removes elements at the end
 movies.shift();//removes elemnt in front
 console.log(movies);
+
+//adding and removing element from specific position
+movies.splice(1,2);
+console.log(movies);
+movies.splice(-2,1,"Superman","Flash")
+console.log(movies);
